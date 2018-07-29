@@ -6,15 +6,13 @@
 
 ### 1、Go安装
 
-**3种安装方式**
-
 - 源码
 
 - 安装包
 
 - 第三方工具：如Ubuntu的apt-get、Mac的homebrew、GVM(支持同一系统安装多个版本的Go)
 
-这里个人借助第三方工具`homebrew`：``` brew install go ```
+以上罗列了3种安装方式，个人借助第三方工具`homebrew`：``` brew install go ```
 
 ### 2、GOPATH与工作空间
 > go 命令依赖一个重要的环境变量:$GOPATH
