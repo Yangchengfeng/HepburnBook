@@ -17,7 +17,6 @@
 这里个人借助第三方工具`homebrew`：``` brew install go ```
 
 ### 2、GOPATH与工作空间
-**GOPATH与工作空间**
 > go 命令依赖一个重要的环境变量:$GOPATH
 
 [配置GOPATH](https://www.jianshu.com/p/358cbc939569)：
@@ -29,9 +28,13 @@
 ② ```vim .bash_profile```
 
 ③ 参数配置
+
 ```export GOPATH=/usr/local/Cellar/go/1.10.3```
+
 ```export GOBIN=$GOPATH/bin```
+
 ```export PATH=$PATH:$GOBIN```
+
 ④ ``` source .bash_profile```
 
 ### 3、Go 命令
