@@ -112,7 +112,13 @@ import (
     _ "github.com/go-sql-driver/mysql"
 ) 
 ```
-## 2、struct类型
+## 2、基本语法
+
+Go语言数据类型
+
+![数据类型](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Go/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png)
+
+### struct类型
 
 （1）三种声明：
 
