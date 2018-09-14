@@ -43,6 +43,8 @@
 
 2、[chm手册](https://github.com/astaxie/godoc)
 
+### 4、[The Go Playground](https://play.golang.org/p/EWIXicJdmz)
+
 注：[篇附图](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Go/02.png)
 
 
