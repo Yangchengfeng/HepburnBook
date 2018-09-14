@@ -37,13 +37,19 @@
 
 ### 3、Go 命令
 
-1、命令查询
+1）命令查询
 
 ![Go命令查询](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Go/Go%E5%91%BD%E4%BB%A4%E6%9F%A5%E8%AF%A2.png)
 
-2、[chm手册](https://github.com/astaxie/godoc)
+2）[chm手册](https://github.com/astaxie/godoc)
 
-### 4、[The Go Playground](https://play.golang.org/p/EWIXicJdmz)
+### 4、The Go Playground
+
+1）界面
+
+![The Go Playground](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Go/TheGoPlayground.png)
+
+2）地址：https://play.golang.org/p/EWIXicJdmz
 
 注：[篇附图](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Go/02.png)
 
