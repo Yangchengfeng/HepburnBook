@@ -62,7 +62,7 @@ func main() {
 }
 ```
 
-1、导入包文件
+1、导入包文件三种格式
 
 ①
 
@@ -630,3 +630,11 @@ func main() {
 timeout
 ```
 注：[篇附图](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Go/003.jpg)
+
+- 本文章节主要参照[Build Web Application With Golang](https://github.com/astaxie/build-web-application-with-golang/)
+
+## 附录
+
+【一】[其他资源](https://github.com/KeKe-Li/book/tree/master/Go)
+
+
