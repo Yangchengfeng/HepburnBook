@@ -1,6 +1,6 @@
 # HeraYoga
 
-## How to use
+## Usage
 
 1、new a project
 
