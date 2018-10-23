@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B2A118A217EBD2F007A349C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A1189217EBD2F007A349C /* AppDelegate.m */; };
+		6B2A118D217EBD2F007A349C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A118C217EBD2F007A349C /* ViewController.m */; };
+		6B2A1190217EBD2F007A349C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2A118E217EBD2F007A349C /* Main.storyboard */; };
+		6B2A1192217EBD32007A349C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2A1191217EBD32007A349C /* Assets.xcassets */; };
+		6B2A1195217EBD32007A349C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2A1193217EBD32007A349C /* LaunchScreen.storyboard */; };
+		6B2A1198217EBD32007A349C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A1197217EBD32007A349C /* main.m */; };
+		6B2A11A2217EBD32007A349C /* HeraYogaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A11A1217EBD32007A349C /* HeraYogaTests.m */; };
+		6B2A11AD217EBD32007A349C /* HeraYogaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A11AC217EBD32007A349C /* HeraYogaUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B2A119E217EBD32007A349C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B2A117D217EBD2F007A349C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B2A1184217EBD2F007A349C;
+			remoteInfo = HeraYoga;
+		};
+		6B2A11A9217EBD32007A349C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B2A117D217EBD2F007A349C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B2A1184217EBD2F007A349C;
+			remoteInfo = HeraYoga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B2A1185217EBD2F007A349C /* HeraYoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeraYoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2A1188217EBD2F007A349C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B2A1189217EBD2F007A349C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B2A118B217EBD2F007A349C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B2A118C217EBD2F007A349C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B2A118F217EBD2F007A349C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B2A1191217EBD32007A349C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B2A1194217EBD32007A349C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B2A1196217EBD32007A349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B2A1197217EBD32007A349C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B2A119D217EBD32007A349C /* HeraYogaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeraYogaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2A11A1217EBD32007A349C /* HeraYogaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeraYogaTests.m; sourceTree = "<group>"; };
+		6B2A11A3217EBD32007A349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B2A11A8217EBD32007A349C /* HeraYogaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeraYogaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2A11AC217EBD32007A349C /* HeraYogaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeraYogaUITests.m; sourceTree = "<group>"; };
+		6B2A11AE217EBD32007A349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B2A1182217EBD2F007A349C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2A119A217EBD32007A349C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2A11A5217EBD32007A349C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B2A117C217EBD2F007A349C = {
+			isa = PBXGroup;
+			children = (
+				6B2A1187217EBD2F007A349C /* HeraYoga */,
+				6B2A11A0217EBD32007A349C /* HeraYogaTests */,
+				6B2A11AB217EBD32007A349C /* HeraYogaUITests */,
+				6B2A1186217EBD2F007A349C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B2A1186217EBD2F007A349C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B2A1185217EBD2F007A349C /* HeraYoga.app */,
+				6B2A119D217EBD32007A349C /* HeraYogaTests.xctest */,
+				6B2A11A8217EBD32007A349C /* HeraYogaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B2A1187217EBD2F007A349C /* HeraYoga */ = {
+			isa = PBXGroup;
+			children = (
+				6B2A1188217EBD2F007A349C /* AppDelegate.h */,
+				6B2A1189217EBD2F007A349C /* AppDelegate.m */,
+				6B2A118B217EBD2F007A349C /* ViewController.h */,
+				6B2A118C217EBD2F007A349C /* ViewController.m */,
+				6B2A118E217EBD2F007A349C /* Main.storyboard */,
+				6B2A1191217EBD32007A349C /* Assets.xcassets */,
+				6B2A1193217EBD32007A349C /* LaunchScreen.storyboard */,
+				6B2A1196217EBD32007A349C /* Info.plist */,
+				6B2A1197217EBD32007A349C /* main.m */,
+			);
+			path = HeraYoga;
+			sourceTree = "<group>";
+		};
+		6B2A11A0217EBD32007A349C /* HeraYogaTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B2A11A1217EBD32007A349C /* HeraYogaTests.m */,
+				6B2A11A3217EBD32007A349C /* Info.plist */,
+			);
+			path = HeraYogaTests;
+			sourceTree = "<group>";
+		};
+		6B2A11AB217EBD32007A349C /* HeraYogaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B2A11AC217EBD32007A349C /* HeraYogaUITests.m */,
+				6B2A11AE217EBD32007A349C /* Info.plist */,
+			);
+			path = HeraYogaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B2A1184217EBD2F007A349C /* HeraYoga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B2A11B1217EBD32007A349C /* Build configuration list for PBXNativeTarget "HeraYoga" */;
+			buildPhases = (
+				6B2A1181217EBD2F007A349C /* Sources */,
+				6B2A1182217EBD2F007A349C /* Frameworks */,
+				6B2A1183217EBD2F007A349C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeraYoga;
+			productName = HeraYoga;
+			productReference = 6B2A1185217EBD2F007A349C /* HeraYoga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B2A119C217EBD32007A349C /* HeraYogaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B2A11B4217EBD32007A349C /* Build configuration list for PBXNativeTarget "HeraYogaTests" */;
+			buildPhases = (
+				6B2A1199217EBD32007A349C /* Sources */,
+				6B2A119A217EBD32007A349C /* Frameworks */,
+				6B2A119B217EBD32007A349C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B2A119F217EBD32007A349C /* PBXTargetDependency */,
+			);
+			name = HeraYogaTests;
+			productName = HeraYogaTests;
+			productReference = 6B2A119D217EBD32007A349C /* HeraYogaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B2A11A7217EBD32007A349C /* HeraYogaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B2A11B7217EBD32007A349C /* Build configuration list for PBXNativeTarget "HeraYogaUITests" */;
+			buildPhases = (
+				6B2A11A4217EBD32007A349C /* Sources */,
+				6B2A11A5217EBD32007A349C /* Frameworks */,
+				6B2A11A6217EBD32007A349C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B2A11AA217EBD32007A349C /* PBXTargetDependency */,
+			);
+			name = HeraYogaUITests;
+			productName = HeraYogaUITests;
+			productReference = 6B2A11A8217EBD32007A349C /* HeraYogaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B2A117D217EBD2F007A349C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Lin,Meini";
+				TargetAttributes = {
+					6B2A1184217EBD2F007A349C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					6B2A119C217EBD32007A349C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 6B2A1184217EBD2F007A349C;
+					};
+					6B2A11A7217EBD32007A349C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 6B2A1184217EBD2F007A349C;
+					};
+				};
+			};
+			buildConfigurationList = 6B2A1180217EBD2F007A349C /* Build configuration list for PBXProject "HeraYoga" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B2A117C217EBD2F007A349C;
+			productRefGroup = 6B2A1186217EBD2F007A349C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B2A1184217EBD2F007A349C /* HeraYoga */,
+				6B2A119C217EBD32007A349C /* HeraYogaTests */,
+				6B2A11A7217EBD32007A349C /* HeraYogaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B2A1183217EBD2F007A349C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2A1195217EBD32007A349C /* LaunchScreen.storyboard in Resources */,
+				6B2A1192217EBD32007A349C /* Assets.xcassets in Resources */,
+				6B2A1190217EBD2F007A349C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2A119B217EBD32007A349C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2A11A6217EBD32007A349C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B2A1181217EBD2F007A349C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2A118D217EBD2F007A349C /* ViewController.m in Sources */,
+				6B2A1198217EBD32007A349C /* main.m in Sources */,
+				6B2A118A217EBD2F007A349C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2A1199217EBD32007A349C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2A11A2217EBD32007A349C /* HeraYogaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2A11A4217EBD32007A349C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2A11AD217EBD32007A349C /* HeraYogaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B2A119F217EBD32007A349C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B2A1184217EBD2F007A349C /* HeraYoga */;
+			targetProxy = 6B2A119E217EBD32007A349C /* PBXContainerItemProxy */;
+		};
+		6B2A11AA217EBD32007A349C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B2A1184217EBD2F007A349C /* HeraYoga */;
+			targetProxy = 6B2A11A9217EBD32007A349C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B2A118E217EBD2F007A349C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B2A118F217EBD2F007A349C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B2A1193217EBD32007A349C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B2A1194217EBD32007A349C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B2A11AF217EBD32007A349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B2A11B0217EBD32007A349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B2A11B2217EBD32007A349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeraYoga/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meinilin.HeraYoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B2A11B3217EBD32007A349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeraYoga/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meinilin.HeraYoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B2A11B5217EBD32007A349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeraYogaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meinilin.HeraYogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeraYoga.app/HeraYoga";
+			};
+			name = Debug;
+		};
+		6B2A11B6217EBD32007A349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeraYogaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meinilin.HeraYogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeraYoga.app/HeraYoga";
+			};
+			name = Release;
+		};
+		6B2A11B8217EBD32007A349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeraYogaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meinilin.HeraYogaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeraYoga;
+			};
+			name = Debug;
+		};
+		6B2A11B9217EBD32007A349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeraYogaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meinilin.HeraYogaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeraYoga;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B2A1180217EBD2F007A349C /* Build configuration list for PBXProject "HeraYoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B2A11AF217EBD32007A349C /* Debug */,
+				6B2A11B0217EBD32007A349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B2A11B1217EBD32007A349C /* Build configuration list for PBXNativeTarget "HeraYoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B2A11B2217EBD32007A349C /* Debug */,
+				6B2A11B3217EBD32007A349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B2A11B4217EBD32007A349C /* Build configuration list for PBXNativeTarget "HeraYogaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B2A11B5217EBD32007A349C /* Debug */,
+				6B2A11B6217EBD32007A349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B2A11B7217EBD32007A349C /* Build configuration list for PBXNativeTarget "HeraYogaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B2A11B8217EBD32007A349C /* Debug */,
+				6B2A11B9217EBD32007A349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B2A117D217EBD2F007A349C /* Project object */;
+}
