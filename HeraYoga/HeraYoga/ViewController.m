@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import <YogaKit/UIView+Yoga.h>
 
+#define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define randomColor random(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
 @interface ViewController ()
 
 @property (nonatomic, strong) UIView *baseClassView;
@@ -21,7 +24,48 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self devideView];
+    // flex-grow使用
+    // [self devideView];
+    
+    // flex-wrap使用
+    [self nineView];
+}
+
+- (void)nineView {
+    NSArray *arr = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", @"6", @"7", nil];
+    
+    UIView *firstView = [[UIView alloc] initWithFrame:CGRectZero];
+    firstView.backgroundColor = [UIColor greenColor];
+    [firstView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.flexDirection = YGFlexDirectionRow;
+        layout.height = YGPointValue(40*(arr.count/4));
+        layout.width = YGPointValue(self.view.frame.size.width);
+        layout.flexWrap = YGWrapWrap;
+    }];
+    [self.baseClassView addSubview:firstView];
+    
+    for (NSString *str in arr) {
+        UIView *view = [[UIView alloc] initWithFrame:CGRectZero];
+        view.backgroundColor = randomColor;
+        [view configureLayoutWithBlock:^(YGLayout * layout) {
+            layout.isEnabled = YES;
+            layout.width = YGPointValue(self.view.frame.size.width/4.0);
+            layout.height = YGPointValue(40);
+        }];
+        [firstView addSubview:view];
+    
+        UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectZero];
+        lbl.text = str;
+        lbl.textAlignment = NSTextAlignmentCenter;
+        [lbl configureLayoutWithBlock:^(YGLayout * layout) {
+            layout.isEnabled = YES;
+            layout.flexGrow = 1.0;
+            layout.padding = YGPointValue(0);
+        }];
+        [view addSubview:lbl];
+    }
+    [self.baseClassView.yoga applyLayoutPreservingOrigin:NO];
 }
 
 - (void)devideView {
