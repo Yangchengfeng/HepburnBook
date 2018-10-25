@@ -193,10 +193,11 @@
     return _baseClassView;
 }
 
-//- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+//- (void)viewWillLayoutSubviews {
+//    [super viewWillLayoutSubviews];
 //    [self.view configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-//        layout.width = YGPointValue(size.width);
-//        layout.height = YGPointValue(size.height);
+//        layout.width = YGPointValue(self.view.bounds.size.width);
+//        layout.height = YGPointValue(self.view.bounds.size.height);
 //    }];
 //    [self.view.yoga applyLayoutPreservingOrigin:YES];
 //}
