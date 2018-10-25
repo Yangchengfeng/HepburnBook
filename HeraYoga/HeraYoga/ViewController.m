@@ -25,8 +25,6 @@
         layout.isEnabled = YES;
         layout.width = YGPointValue(320);
         layout.height = YGPointValue(80);
-        layout.marginTop = YGPointValue(64);
-        layout.marginLeft = YGPointValue(0);
     }];
     [self.view addSubview:firstView];
     [firstView.yoga applyLayoutPreservingOrigin:NO];
