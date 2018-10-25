@@ -46,6 +46,15 @@
         layout.marginLeft = YGPointValue(10);
     }];
     [self.view addSubview:contentView];
+    
+    UIView *childViewOne = [[UIView alloc] initWithFrame:CGRectZero];
+    childViewOne.backgroundColor = [UIColor redColor];
+    [childViewOne configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.width = YGPointValue(80);
+    }];
+    [contentView addSubview:childViewOne];
+    
     [contentView.yoga applyLayoutPreservingOrigin:NO];
 }
 
