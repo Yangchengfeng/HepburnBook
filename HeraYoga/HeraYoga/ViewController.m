@@ -28,7 +28,25 @@
     // [self devideView];
     
     // flex-wrap使用
-    [self nineView];
+    // [self nineView];
+    
+    // raywenderlich_yoga
+    [self simpleView];
+}
+
+- (void)simpleView {
+    UIView *contentView = [[UIView alloc] initWithFrame:CGRectZero];
+    contentView.backgroundColor = [UIColor lightGrayColor];
+    [contentView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.flexDirection = YGFlexDirectionRow;
+        layout.width = YGPointValue(320);
+        layout.height = YGPointValue(80);
+        layout.marginTop = YGPointValue(40);
+        layout.marginLeft = YGPointValue(10);
+    }];
+    [self.view addSubview:contentView];
+    [contentView.yoga applyLayoutPreservingOrigin:NO];
 }
 
 - (void)nineView {
