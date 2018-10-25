@@ -63,6 +63,8 @@
         layout.isEnabled = YES;
         layout.width = YGPointValue(80);
         layout.flexGrow = 1; // 允许自增长填充
+        layout.height = YGPointValue(20);
+        layout.alignSelf = YGAlignCenter;
     }];
     [contentView addSubview:childViewTwo];
     
