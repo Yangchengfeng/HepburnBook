@@ -21,30 +21,50 @@
     
     UIView *firstView = [[UIView alloc] initWithFrame:CGRectZero];
     firstView.backgroundColor = [UIColor redColor];
-    [firstView configureLayoutWithBlock:^(YGLayout * layout) {
+    [firstView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         layout.marginTop = YGPointValue(64);
-        layout.padding = YGPointValue(self.view.frame.size.width/2.0);
+        layout.width = YGPointValue(self.view.frame.size.width);
+        layout.height = YGPointValue(self.view.frame.size.height);
+        layout.justifyContent = YGJustifyFlexStart;
     }];
     [self.view addSubview:firstView];
     
-    UIView *bottomView = [[UIView alloc] initWithFrame:CGRectZero];
-    bottomView.backgroundColor = [UIColor yellowColor];
-    [bottomView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+    UIView *secondView = [[UIView alloc] initWithFrame:CGRectZero];
+    secondView.backgroundColor = [UIColor cyanColor];
+    [secondView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
-        layout.marginTop = YGPointValue(0);
-        layout.padding = YGPointValue(8);
+        layout.flexDirection = YGFlexDirectionRow;
+        layout.width = YGPointValue(self.view.frame.size.width - 50);
     }];
-    [firstView addSubview:bottomView];
+    [firstView addSubview:secondView];
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.backgroundColor = [UIColor grayColor];
-    [btn configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+    UILabel *availabelLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    availabelLabel.backgroundColor = [UIColor greenColor];
+    availabelLabel.text = @"阳丞枫";
+    [availabelLabel configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
-        layout.marginTop = YGPointValue(0);
-        layout.padding = YGPointValue(50);
+        layout.flexGrow = 0;
     }];
-    [firstView addSubview:btn];
+    [secondView addSubview:availabelLabel];
+    
+    UIView *tagView = [[UIView alloc] initWithFrame:CGRectZero];
+    tagView.backgroundColor = [UIColor magentaColor];
+    [tagView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.flexGrow = 2.0;
+    }];
+    [secondView addSubview:tagView];
+    
+    UIImageView *tagImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    tagView.backgroundColor = [UIColor yellowColor];
+    tagImageView.image = [UIImage imageNamed:@"add"];
+    [tagImageView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.flexGrow = 0;
+        layout.width = YGPointValue(15);
+    }];
+    [tagView addSubview:tagImageView];
     
     [firstView.yoga applyLayoutPreservingOrigin:NO];
 }
