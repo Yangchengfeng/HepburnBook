@@ -23,8 +23,7 @@
     firstView.backgroundColor = [UIColor redColor];
     [firstView configureLayoutWithBlock:^(YGLayout * layout) {
         layout.isEnabled = YES;
-        layout.width = YGPointValue(320);
-        layout.height = YGPointValue(80);
+        layout.padding = YGPointValue(self.view.frame.size.width/2.0);
     }];
     [self.view addSubview:firstView];
     [firstView.yoga applyLayoutPreservingOrigin:NO];
