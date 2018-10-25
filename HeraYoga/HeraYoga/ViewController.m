@@ -32,17 +32,47 @@
     
     // raywenderlich_yoga
     
-    [self.view configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+//    [self.view configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+//        layout.isEnabled = YES;
+//        layout.width = YGPointValue(self.view.bounds.size.width);
+//        layout.height = YGPointValue(self.view.bounds.size.height);
+//        layout.alignItems = YGAlignCenter; // 水平居中
+//        layout.justifyContent = YGJustifyCenter; // 垂直居中
+//    }];
+//
+//    [self simpleView];
+//
+//    [self.view.yoga applyLayoutPreservingOrigin:NO];
+    
+    [self advanceView];
+}
+
+- (void)advanceView {
+    UIView *contentView = [[UIView alloc] initWithFrame:CGRectZero];
+    contentView.backgroundColor = [UIColor blackColor];
+    [contentView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
+        layout.flexDirection = YGFlexDirectionRow;
         layout.width = YGPointValue(self.view.bounds.size.width);
-        layout.height = YGPointValue(self.view.bounds.size.height);
-        layout.alignItems = YGAlignCenter; // 水平居中
-        layout.justifyContent = YGJustifyCenter; // 垂直居中
+        layout.height = YGPointValue(80);
     }];
+    [self.view addSubview:contentView];
     
-    [self simpleView];
+    UIImage *image = [UIImage imageNamed:@"topic"];
+    CGFloat imageW = image ? image.size.width : 1.0;
+    CGFloat imageH = image ? image.size.height : 1.0;
     
-    [self.view.yoga applyLayoutPreservingOrigin:NO];
+    UIImageView *episodeImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    episodeImageView.backgroundColor = [UIColor grayColor];
+    episodeImageView.image = image;
+    [episodeImageView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.flexGrow = 1.0;
+        layout.aspectRatio = imageW / imageH;
+    }];
+    [contentView addSubview:episodeImageView];
+    
+    [contentView.yoga applyLayoutPreservingOrigin:YES];
 }
 
 - (void)simpleView {
@@ -163,12 +193,12 @@
     return _baseClassView;
 }
 
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
-    [self.view configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.width = YGPointValue(size.width);
-        layout.height = YGPointValue(size.height);
-    }];
-    [self.view.yoga applyLayoutPreservingOrigin:YES];
-}
+//- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+//    [self.view configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+//        layout.width = YGPointValue(size.width);
+//        layout.height = YGPointValue(size.height);
+//    }];
+//    [self.view.yoga applyLayoutPreservingOrigin:YES];
+//}
 
 @end
