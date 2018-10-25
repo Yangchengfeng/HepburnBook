@@ -55,6 +55,15 @@
     }];
     [contentView addSubview:childViewOne];
     
+    UIView *childViewTwo = [[UIView alloc] initWithFrame:CGRectZero];
+    childViewTwo.backgroundColor = [UIColor blueColor];
+    [childViewTwo configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.width = YGPointValue(80);
+        layout.flexGrow = 1; // 允许自增长填充
+    }];
+    [contentView addSubview:childViewTwo];
+    
     [contentView.yoga applyLayoutPreservingOrigin:NO];
 }
 
