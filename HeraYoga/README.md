@@ -2,8 +2,10 @@
 
 ## Usage
 
-1、new a project
+1、将我的Podfile添加到你的项目中，并修改target name
 
-2、download yoga at https://github.com/facebook/yoga, then add 【yoga/YogaKit/Source & yoga/yoga】 to your project  Or drag https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraYoga/lib into your project
+2、在项目目录下执行：pod install
 
-3、build and run your project, if get errors, find it by these ways, but i don't think all are include, you can try it or write your comments
+## Download
+
+❗️:DO NOT support Cocoapods and Carthage yet ,Just support old school way for now

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <YogaKit/UIView+Yoga.h>
 
 @interface ViewController ()
 
@@ -17,6 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *firstView = [[UIView alloc] initWithFrame:CGRectZero];
+    firstView.backgroundColor = [UIColor redColor];
+    [firstView configureLayoutWithBlock:^(YGLayout * layout) {
+        layout.isEnabled = YES;
+        layout.width = YGPointValue(320);
+        layout.height = YGPointValue(80);
+        layout.marginTop = YGPointValue(64);
+        layout.marginLeft = YGPointValue(0);
+    }];
+    [self.view addSubview:firstView];
+    [firstView.yoga applyLayoutPreservingOrigin:NO];
 }
 
 

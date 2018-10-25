@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F9A93F216365178B851BFA /* Pods_HeraYoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE75F22222029F2A6B501EA /* Pods_HeraYoga.framework */; };
 		6B2A118A217EBD2F007A349C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A1189217EBD2F007A349C /* AppDelegate.m */; };
 		6B2A118D217EBD2F007A349C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A118C217EBD2F007A349C /* ViewController.m */; };
 		6B2A1190217EBD2F007A349C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2A118E217EBD2F007A349C /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FBECF4D603BBFCA72773366 /* Pods-HeraYoga.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeraYoga.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeraYoga/Pods-HeraYoga.debug.xcconfig"; sourceTree = "<group>"; };
 		6B2A1185217EBD2F007A349C /* HeraYoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeraYoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2A1188217EBD2F007A349C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B2A1189217EBD2F007A349C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		6B2A11A8217EBD32007A349C /* HeraYogaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeraYogaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2A11AC217EBD32007A349C /* HeraYogaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeraYogaUITests.m; sourceTree = "<group>"; };
 		6B2A11AE217EBD32007A349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798E06F46E410B0726DD527B /* Pods-HeraYoga.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeraYoga.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeraYoga/Pods-HeraYoga.release.xcconfig"; sourceTree = "<group>"; };
+		7DE75F22222029F2A6B501EA /* Pods_HeraYoga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeraYoga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F9A93F216365178B851BFA /* Pods_HeraYoga.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21A0027ABE206A07B5631C57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DE75F22222029F2A6B501EA /* Pods_HeraYoga.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A33E4089233F3B68F5DEC02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FBECF4D603BBFCA72773366 /* Pods-HeraYoga.debug.xcconfig */,
+				798E06F46E410B0726DD527B /* Pods-HeraYoga.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6B2A117C217EBD2F007A349C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				6B2A11A0217EBD32007A349C /* HeraYogaTests */,
 				6B2A11AB217EBD32007A349C /* HeraYogaUITests */,
 				6B2A1186217EBD2F007A349C /* Products */,
+				3A33E4089233F3B68F5DEC02 /* Pods */,
+				21A0027ABE206A07B5631C57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B2A11B1217EBD32007A349C /* Build configuration list for PBXNativeTarget "HeraYoga" */;
 			buildPhases = (
+				02B5EC85CFAA380BE595863F /* [CP] Check Pods Manifest.lock */,
 				6B2A1181217EBD2F007A349C /* Sources */,
 				6B2A1182217EBD2F007A349C /* Frameworks */,
 				6B2A1183217EBD2F007A349C /* Resources */,
+				3352528B26E5B01FCF4ADDFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +283,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02B5EC85CFAA380BE595863F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeraYoga-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3352528B26E5B01FCF4ADDFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeraYoga/Pods-HeraYoga-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/YogaKit/YogaKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YogaKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeraYoga/Pods-HeraYoga-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B2A1181217EBD2F007A349C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -322,7 +397,7 @@
 		6B2A11AF217EBD32007A349C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,7 +455,7 @@
 		6B2A11B0217EBD32007A349C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -431,6 +506,7 @@
 		};
 		6B2A11B2217EBD32007A349C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FBECF4D603BBFCA72773366 /* Pods-HeraYoga.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,12 +517,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = meinilin.HeraYoga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		6B2A11B3217EBD32007A349C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 798E06F46E410B0726DD527B /* Pods-HeraYoga.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,6 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = meinilin.HeraYoga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
