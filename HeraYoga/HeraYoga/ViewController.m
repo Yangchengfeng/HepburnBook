@@ -163,5 +163,12 @@
     return _baseClassView;
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [self.view configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.width = YGPointValue(size.width);
+        layout.height = YGPointValue(size.height);
+    }];
+    [self.view.yoga applyLayoutPreservingOrigin:YES];
+}
 
 @end
