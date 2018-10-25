@@ -11,6 +11,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) UIView *baseClassView;
+
 @end
 
 @implementation ViewController
@@ -19,60 +21,51 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [self devideView];
+}
+
+- (void)devideView {
     UIView *firstView = [[UIView alloc] initWithFrame:CGRectZero];
-    firstView.backgroundColor = [UIColor redColor];
+    firstView.backgroundColor = [UIColor grayColor];
     [firstView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
-        layout.marginTop = YGPointValue(64);
-        layout.width = YGPointValue(self.view.frame.size.width);
-        layout.height = YGPointValue(self.view.frame.size.height);
-        layout.justifyContent = YGJustifyFlexStart;
+        layout.flexGrow = 1.0;
     }];
-    [self.view addSubview:firstView];
+    [self.baseClassView addSubview:firstView];
     
     UIView *secondView = [[UIView alloc] initWithFrame:CGRectZero];
-    secondView.backgroundColor = [UIColor cyanColor];
+    secondView.backgroundColor = [UIColor redColor];
     [secondView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.isEnabled = YES;
-        layout.flexDirection = YGFlexDirectionRow;
-        layout.width = YGPointValue(self.view.frame.size.width - 50);
-    }];
-    [firstView addSubview:secondView];
-    
-    UILabel *availabelLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    availabelLabel.backgroundColor = [UIColor greenColor];
-    availabelLabel.text = @"我想测试下具体的长度及其显示的效果，ABCDEFGHIJKLMN";
-    [availabelLabel configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
-        layout.isEnabled = YES;
-        layout.flexGrow = 0;
-    }];
-    [secondView addSubview:availabelLabel];
-    
-    UIView *tagView = [[UIView alloc] initWithFrame:CGRectZero];
-    tagView.backgroundColor = [UIColor magentaColor];
-    [tagView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         layout.flexGrow = 2.0;
     }];
-    [secondView addSubview:tagView];
+    [self.baseClassView addSubview:secondView];
     
-    UIImageView *tagImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-    tagView.backgroundColor = [UIColor yellowColor];
-    tagImageView.image = [UIImage imageNamed:@"add"];
-    [tagImageView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+    UIView *thirdView = [[UIView alloc] initWithFrame:CGRectZero];
+    thirdView.backgroundColor = [UIColor orangeColor];
+    [thirdView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
-        layout.flexGrow = 0;
-        layout.width = YGPointValue(15);
+        layout.flexGrow = 1.0;
     }];
-    [tagView addSubview:tagImageView];
+    [self.baseClassView addSubview:thirdView];
     
-    [firstView.yoga applyLayoutPreservingOrigin:NO];
+    [self.baseClassView.yoga applyLayoutPreservingOrigin:NO];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIView *)baseClassView {
+    if(!_baseClassView) {
+        _baseClassView = [[UIView alloc] initWithFrame:CGRectZero];
+        _baseClassView.backgroundColor = [UIColor redColor];
+        [_baseClassView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+            layout.isEnabled = YES;
+            layout.marginTop = YGPointValue(64);
+            layout.width = YGPointValue(self.view.frame.size.width);
+            layout.height = YGPointValue(self.view.frame.size.width);
+            layout.justifyContent = YGJustifyFlexStart;
+        }];
+        [self.view addSubview:_baseClassView];
+    }
+    return _baseClassView;
 }
 
 
