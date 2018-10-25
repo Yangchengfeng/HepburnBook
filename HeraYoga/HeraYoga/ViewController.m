@@ -44,6 +44,7 @@
         layout.height = YGPointValue(80);
         layout.marginTop = YGPointValue(40);
         layout.marginLeft = YGPointValue(10);
+        layout.padding = YGPointValue(10);
     }];
     [self.view addSubview:contentView];
     
