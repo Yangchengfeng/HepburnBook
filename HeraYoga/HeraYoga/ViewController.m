@@ -41,7 +41,9 @@
         layout.flexDirection = YGFlexDirectionRow;
         layout.height = YGPointValue(40*(arr.count/4));
         layout.width = YGPointValue(self.view.frame.size.width);
-        layout.flexWrap = YGWrapWrap;
+//        layout.flexWrap = YGWrapWrap; // wrap
+//        layout.flexWrap = YGWrapNoWrap; // nowrap
+        layout.flexWrap = YGWrapWrapReverse; // wrap-reverse
     }];
     [self.baseClassView addSubview:firstView];
     
