@@ -36,7 +36,8 @@
         layout.isEnabled = YES;
         layout.width = YGPointValue(self.view.bounds.size.width);
         layout.height = YGPointValue(self.view.bounds.size.height);
-        layout.alignItems = YGAlignCenter;
+        layout.alignItems = YGAlignCenter; // 水平居中
+        layout.justifyContent = YGJustifyCenter; // 垂直居中
     }];
     
     [self simpleView];
@@ -52,7 +53,6 @@
         layout.flexDirection = YGFlexDirectionRow;
         layout.width = YGPointValue(320);
         layout.height = YGPointValue(80);
-        layout.marginTop = YGPointValue(40);
         layout.padding = YGPointValue(10);
     }];
     [self.view addSubview:contentView];
