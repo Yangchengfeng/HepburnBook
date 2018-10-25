@@ -53,6 +53,7 @@
     [childViewOne configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         layout.width = YGPointValue(80);
+        layout.marginRight = YGPointValue(10);
     }];
     [contentView addSubview:childViewOne];
     
