@@ -9,3 +9,7 @@
 ## Download
 
 ❗️:DO NOT support Cocoapods and Carthage yet ,Just support old school way for now
+
+## Reference
+
+🎺  Myblog

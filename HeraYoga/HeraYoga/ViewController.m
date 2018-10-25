@@ -27,6 +27,16 @@
         layout.padding = YGPointValue(self.view.frame.size.width/2.0);
     }];
     [self.view addSubview:firstView];
+    
+    UIView *bottomView = [[UIView alloc] initWithFrame:CGRectZero];
+    bottomView.backgroundColor = [UIColor yellowColor];
+    [bottomView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.marginTop = YGPointValue(0);
+        layout.padding = YGPointValue(8);
+    }];
+    [firstView addSubview:bottomView];
+    
     [firstView.yoga applyLayoutPreservingOrigin:NO];
 }
 
