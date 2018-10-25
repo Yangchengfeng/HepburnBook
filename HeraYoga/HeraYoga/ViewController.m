@@ -31,7 +31,17 @@
     // [self nineView];
     
     // raywenderlich_yoga
+    
+    [self.view configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.width = YGPointValue(self.view.bounds.size.width);
+        layout.height = YGPointValue(self.view.bounds.size.height);
+        layout.alignItems = YGAlignCenter;
+    }];
+    
     [self simpleView];
+    
+    [self.view.yoga applyLayoutPreservingOrigin:NO];
 }
 
 - (void)simpleView {
@@ -43,7 +53,6 @@
         layout.width = YGPointValue(320);
         layout.height = YGPointValue(80);
         layout.marginTop = YGPointValue(40);
-        layout.marginLeft = YGPointValue(10);
         layout.padding = YGPointValue(10);
     }];
     [self.view addSubview:contentView];
@@ -68,7 +77,7 @@
     }];
     [contentView addSubview:childViewTwo];
     
-    [contentView.yoga applyLayoutPreservingOrigin:NO];
+    [contentView.yoga applyLayoutPreservingOrigin:YES];
 }
 
 - (void)nineView {
