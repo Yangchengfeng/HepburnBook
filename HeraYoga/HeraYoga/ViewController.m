@@ -41,7 +41,7 @@
     
     UILabel *availabelLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     availabelLabel.backgroundColor = [UIColor greenColor];
-    availabelLabel.text = @"阳丞枫";
+    availabelLabel.text = @"我想测试下具体的长度及其显示的效果，ABCDEFGHIJKLMN";
     [availabelLabel configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
         layout.isEnabled = YES;
         layout.flexGrow = 0;
