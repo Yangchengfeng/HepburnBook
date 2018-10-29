@@ -28,7 +28,70 @@
     // [self devideView];
     
     // flex-wrap使用
-    [self nineView];
+//     [self nineView];
+    
+    
+    UIView *view  = [[UIView alloc] initWithFrame:CGRectMake(0, 50, self.view.bounds.size.width, 53)];
+    view.backgroundColor = [UIColor whiteColor];
+    
+    [view addSubview:[self p_testView]];
+    
+    [self.view addSubview:view];
+}
+
+- (UIView *)p_testView {
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 53)];
+    backView.backgroundColor = [UIColor whiteColor];
+    [backView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+        layout.isEnabled = YES;
+        layout.flexDirection = YGFlexDirectionRow;
+        layout.justifyContent = YGJustifyCenter;
+        layout.flexWrap = YGWrapNoWrap;
+    }];
+    
+    NSArray *nameArr = @[@"玫瑰花", @"蔷薇", @"杏", @"阳春白雪"];
+    for(int i = 0; i<nameArr.count; i++) {
+        UIView *typeView = [[UIView alloc] init];
+        typeView.backgroundColor = randomColor;
+        
+        UIView *colorView = [[UIView alloc] init];
+        colorView.backgroundColor = randomColor;
+        colorView.layer.cornerRadius = 1;
+        colorView.clipsToBounds = YES;
+        [colorView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+            layout.isEnabled = YES;
+            layout.width = YGPointValue(10);
+            layout.height = YGPointValue(10);
+            layout.marginLeft = YGPointValue(0);
+            layout.alignSelf = YGAlignCenter;
+        }];
+        [typeView addSubview:colorView];
+        
+        UILabel *label = [[UILabel alloc] init];
+        label.backgroundColor = [UIColor redColor];
+        label.text = nameArr[i];
+        label.textAlignment = NSTextAlignmentLeft;
+        label.font = [UIFont systemFontOfSize:13];
+        label.textColor = [UIColor blackColor];
+        [label configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+            layout.isEnabled = YES;
+            layout.marginLeft = YGPointValue(4);
+        }];
+        [typeView addSubview:label];
+        
+        [typeView configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
+            layout.isEnabled = YES;
+            layout.height = YGPointValue(13);
+            layout.flexDirection = YGFlexDirectionRow;
+            layout.justifyContent = YGJustifyFlexStart;
+            layout.margin = YGPointValue(17);
+        }];
+        [backView addSubview:typeView];
+    }
+    
+    [backView.yoga applyLayoutPreservingOrigin:NO];
+    
+    return backView;
 }
 
 - (void)nineView {
