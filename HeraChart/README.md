@@ -18,6 +18,8 @@
 
 ## Charts
 
-🔗 [iOS_传送门](https://github.com/danielgindi/Charts) & 🔗 [Android_传送门](https://github.com/PhilJay/MPAndroidChart)
+🔗 [iOS_传送门](https://github.com/danielgindi/Charts) & [Android_传送门](https://github.com/PhilJay/MPAndroidChart)
+
+这个库应该是图表库里边star✨特别多的了(特别是安卓)，iOS是swift语言开发的，需要📒 [桥接](https://blog.csdn.net/yang_chengfeng/article/details/83515863)
 
 --- 未完 // 待续 --- 
