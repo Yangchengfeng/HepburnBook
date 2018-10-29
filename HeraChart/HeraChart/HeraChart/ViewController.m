@@ -22,7 +22,7 @@
 }
 
 - (KIDAnalysisChartView *)p_setupTemperatureChartView {
-    KIDAnalysisChartView *chartView = [[KIDAnalysisChartView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, 222) topicStr:@"体温走势(℃)"];
+    KIDAnalysisChartView *chartView = [[KIDAnalysisChartView alloc] initWithFrame:CGRectMake(0, 30, self.view.bounds.size.width * 1.2, 350) topicStr:@"体温走势(℃)"];
     return chartView;
 }
 

@@ -50,13 +50,13 @@
     
     CGFloat scrollViewH = self.bounds.size.height - 35;
     
-    self.aaScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 35, self.bounds.size.width, scrollViewH)];
-    self.aaScrollView.contentSize = CGSizeMake(self.bounds.size.width * 2, scrollViewH);
+    self.aaScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(15, 35, self.bounds.size.width, scrollViewH)];
+    self.aaScrollView.contentSize = CGSizeMake(self.bounds.size.width * 1.5, scrollViewH);
     self.aaScrollView.showsHorizontalScrollIndicator = NO;
     self.aaScrollView.showsVerticalScrollIndicator = NO;
     self.aaScrollView.alwaysBounceVertical = NO;
     
-    self.aaChartView = [[AAChartView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width*2, scrollViewH)];
+    self.aaChartView = [[AAChartView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, scrollViewH)];
     self.backgroundColor = [UIColor whiteColor];
     self.aaChartView.scrollEnabled = NO;
     self.aaChartView.contentHeight = self.aaChartView.frame.size.height;
@@ -74,35 +74,35 @@
     @{
       @"linearGradient": @{
               @"x1": @0,
-              @"y1": @1, // 从下往上
+              @"y1": @1, // 从下到上加深
               @"x2": @0,
               @"y2": @0
               },
-      @"stops": @[@[@0, @"rgba(223, 239, 207, 0.1)"],
-                  @[@1, @"rgba(247, 255, 240, 1)"]]
+      @"stops": @[@[@0,@"rgba(220,20,60,0.1)"],
+                  @[@1,@"rgba(220,20,60,1)"]]
       };
+    
     NSDictionary *gradientColorDic2 =
     @{
       @"linearGradient": @{
               @"x1": @0,
-              @"y1": @1,
+              @"y1": @0,
               @"x2": @0,
-              @"y2": @0
+              @"y2": @1 // 从上到下加深
               },
-      @"stops": @[@[@0, @"rgba(255, 194, 208, 0.1)"],
-                  @[@1, @"rgba(255, 245, 247, 1)"]]
+      @"stops": @[@[@0,@"rgba(30,144,255,0.2)"],
+                  @[@1,@"rgba(30,144,255,1)"]]
       };
-    
     NSDictionary *gradientColorDic3 =
     @{
       @"linearGradient": @{
               @"x1": @0,
-              @"y1": @1,
-              @"x2": @0,
+              @"y1": @0,
+              @"x2": @1, 
               @"y2": @1
               },
-      @"stops": @[@[@0, @"rgba(255, 234, 202, 0.1)"],
-                  @[@1, @"rgba(255, 247, 236, 1)"]]
+      @"stops": @[@[@0, @"rgba(255, 215, 0, 0.1)"],
+                  @[@1, @"rgba(255, 215, 0, 1)"]]
       };
     
     AAChartModel *aaChartModel = AAChartModel.new
