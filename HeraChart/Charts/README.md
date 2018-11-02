@@ -63,8 +63,13 @@ end
 
 #### manually
 
-- U can get my demo in this [way](https://github.com/Yangchengfeng/HepburnBook/tree/Charts_iOS_Cocoapods/HeraChart/Charts/HeraChartsManually)
+1、clone下源码，这里选择sourcetree
 
+2、切到v3.1.1提交节点，这里个人选择`6b730a03`节点，可以通过git status看看是不是打印：` HEAD detached at 6b730a03 `
+
+3、去掉以下两个文件夹：ChartsDemo-iOS & ChartsDemo-macOS，并将Charts.xcodeproj拖入你的项目里
+
+- U can get my demo in this [way](https://github.com/Yangchengfeng/HepburnBook/tree/Charts_iOS_Cocoapods/HeraChart/Charts/HeraChartsManually)
 
 ### Bridge
 
