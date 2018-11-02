@@ -87,6 +87,18 @@ end
 
 ![](https://github.com/Yangchengfeng/HepburnBook/blob/Charts_iOS_Cocoapods/HeraChart/Charts/sure_version.png)
 
+// manually的方式需要执行下面3.1 ，3.2
+
+3.1 Always Embed swift standard libraries -> YES
+
+![](https://github.com/Yangchengfeng/HepburnBook/blob/Charts_iOS_Manually_v2/HeraChart/Charts/manuall_settings.png)
+
+3.2 Embedded Binaries
+
+![](https://github.com/Yangchengfeng/HepburnBook/blob/Charts_iOS_Manually_v2/HeraChart/Charts/manually_setting_add_framework.png)
+
+// manually的方式需要执行以上3.1 ，3.2
+
 4、进行桥接，在`工程名-Bridging-Header.h`中，写上引用的swift头文件
 
 ```
@@ -132,7 +144,13 @@ end
 
 6、运行得到一个暂未输入数据的结果:
 
+6.1 pod的方式运行结果
+
 ![](https://github.com/Yangchengfeng/HepburnBook/blob/Charts_iOS_Cocoapods/HeraChart/Charts/result_nodata_run_on_6plus.png)
+
+6.2 manually的方式运行结果
+
+![](https://github.com/Yangchengfeng/HepburnBook/blob/Charts_iOS_Manually_v2/HeraChart/Charts/manually_result.png)
 
 ## Troubleshooting
 
