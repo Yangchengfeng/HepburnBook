@@ -135,6 +135,9 @@ end
 
     BarChartView *chartView = [[BarChartView alloc] initWithFrame:self.view.bounds];
     chartView.backgroundColor = [UIColor colorWithRed:255/255.0 green:101/255.0 blue:136/255.0 alpha:1];
+    
+    // chartView.backgroundColor = [UIColor yellowColor]; // manually的方式
+    
     [self.view addSubview:chartView];
 }
 
