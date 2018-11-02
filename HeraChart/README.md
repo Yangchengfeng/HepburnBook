@@ -1,4 +1,4 @@
-# Chart
+# Charts
 
 📈 📊 最近接触到图表的页面，也在了解GitHub上比较popular的图表框架，下面从每个的使用来看看：
 
@@ -8,7 +8,7 @@
 
 📒 [相关参数参见](https://www.hcharts.cn/docs)
 
-📚 [Apply](https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraChart)
+📚 [Apply](https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraChart/HeraChart)
 
 ![demo](https://github.com/Yangchengfeng/HepburnBook/blob/master/HeraChart/HeraChart/AAChartKit%E5%AE%9E%E8%B7%B5%E5%9B%BE.png)
 
@@ -19,6 +19,8 @@
 ## Charts
 
 🔗 [iOS_传送门](https://github.com/danielgindi/Charts) & [Android_传送门](https://github.com/PhilJay/MPAndroidChart)
+
+📚 [Apply](https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraChart/Charts)
 
 这个库应该是图表库里边star✨特别多的了(安卓的同学推荐用这个库MPAndroidChart🔥🔥🔥)；相对而言有如下问题：
 
