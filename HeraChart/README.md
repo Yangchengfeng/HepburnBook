@@ -20,6 +20,10 @@
 
 🔗 [iOS_传送门](https://github.com/danielgindi/Charts) & [Android_传送门](https://github.com/PhilJay/MPAndroidChart)
 
-这个库应该是图表库里边star✨特别多的了(特别是安卓)，iOS是swift语言开发的，需要📒 [桥接](https://blog.csdn.net/yang_chengfeng/article/details/83515863)
+这个库应该是图表库里边star✨特别多的了(安卓的同学推荐用这个库MPAndroidChart🔥🔥🔥)；相对而言有如下问题：
+❗️iOS是swift语言开发的，如果是本身项目是OC开发的，需要桥接
+❗️该库GitHub上的[wiki](https://github.com/PhilJay/MPAndroidChart/wiki)是针对MPAndroidChart的简介，开发的时候可以看看，特性还是比较相似的
+❗️对于具体业务，网上资料比较多是安卓的，需要理解源码
+ 虽然有以上问题，但是挡不住这个功能丰富的库的光芒🌅，具体操作、遇到问题及解决方案([传送门](https://blog.csdn.net/yang_chengfeng/article/details/83515863))
 
 --- 未完 // 待续 --- 
