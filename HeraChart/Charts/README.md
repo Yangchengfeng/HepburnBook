@@ -136,3 +136,10 @@ end
 
 
 ## Appendices
+
+### How to pod
+
+1、[pod step 路](https://www.jianshu.com/p/6bf9e2d8e9db)
+
+2、[pod trouble 坑](https://www.jianshu.com/p/1062907fee17)
+
