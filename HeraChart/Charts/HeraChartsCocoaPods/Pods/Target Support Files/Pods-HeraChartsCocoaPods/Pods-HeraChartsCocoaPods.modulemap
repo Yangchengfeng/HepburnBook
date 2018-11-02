@@ -1,0 +1,6 @@
+framework module Pods_HeraChartsCocoaPods {
+  umbrella header "Pods-HeraChartsCocoaPods-umbrella.h"
+
+  export *
+  module * { export * }
+}

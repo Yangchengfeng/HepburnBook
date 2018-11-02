@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HeraChartsCocoaPods-Bridging-Header.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    BarChartView *chartView = [[BarChartView alloc] initWithFrame:self.view.bounds];
+    chartView.backgroundColor = [UIColor colorWithRed:255/255.0 green:101/255.0 blue:136/255.0 alpha:1];
+    [self.view addSubview:chartView];
 }
 
 
