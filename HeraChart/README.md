@@ -22,7 +22,21 @@
 
 📚 [Apply](https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraChart/Charts)
 
-📓 [Example](https://github.com/Yangchengfeng/HepburnBook/tree/Charts_iOS_Manually_v2/HeraChart/Charts/HeraChartsManually)，效果图如下：
+📓 [Example](https://github.com/Yangchengfeng/HepburnBook/tree/Charts_iOS_Manually_v2/HeraChart/Charts/HeraChartsManually)
+
+主要实现点有如下：
+
+- 图表设置：x、y轴数据
+
+- 曲线数据样式及填充
+
+  - 分不同区块，如：少年期、中年期、老年期；
+
+  - 不同区块包含了各自的：曲线上的数据(x-y轴)、填充颜色(支持单一或渐变)、区块描述(文案：颜色、位置、字号等)
+
+  - 缩放图表(根据个人对x轴可视数据个数设置)，使得图表可以拖动
+
+图如下：
 
 ![demo](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Charts_Example.png)
 
