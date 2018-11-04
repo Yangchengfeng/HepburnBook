@@ -16,6 +16,11 @@
 		6B2A9E82218C90A50060F959 /* HeraChartsBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A9E81218C90A50060F959 /* HeraChartsBridge.swift */; };
 		6BA82021218EC61E002DE1F0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B63D4A3218CC21C0044DDF7 /* Charts.framework */; };
 		6BA82022218EC61E002DE1F0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B63D4A3218CC21C0044DDF7 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BA82029218EC94B002DE1F0 /* HeraChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA82028218EC94B002DE1F0 /* HeraChartView.m */; };
+		6BA82031218ED05A002DE1F0 /* HeraPeriodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA82030218ED05A002DE1F0 /* HeraPeriodModel.m */; };
+		6BA82034218ED157002DE1F0 /* HeraDataValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA82033218ED157002DE1F0 /* HeraDataValueFormatter.m */; };
+		6BA8203A218ED1C6002DE1F0 /* HeraSetValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA82039218ED1C6002DE1F0 /* HeraSetValueFormatter.m */; };
+		6BA8203D218ED28C002DE1F0 /* HeraSymbolsValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA8203C218ED28C002DE1F0 /* HeraSymbolsValueFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,16 @@
 		6B2A9E80218C90A50060F959 /* HeraChartsManually-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeraChartsManually-Bridging-Header.h"; sourceTree = "<group>"; };
 		6B2A9E81218C90A50060F959 /* HeraChartsBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeraChartsBridge.swift; sourceTree = "<group>"; };
 		6B63D49D218CC21C0044DDF7 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		6BA82027218EC94B002DE1F0 /* HeraChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeraChartView.h; sourceTree = "<group>"; };
+		6BA82028218EC94B002DE1F0 /* HeraChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeraChartView.m; sourceTree = "<group>"; };
+		6BA8202F218ED05A002DE1F0 /* HeraPeriodModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeraPeriodModel.h; sourceTree = "<group>"; };
+		6BA82030218ED05A002DE1F0 /* HeraPeriodModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeraPeriodModel.m; sourceTree = "<group>"; };
+		6BA82032218ED157002DE1F0 /* HeraDataValueFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeraDataValueFormatter.h; sourceTree = "<group>"; };
+		6BA82033218ED157002DE1F0 /* HeraDataValueFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeraDataValueFormatter.m; sourceTree = "<group>"; };
+		6BA82038218ED1C6002DE1F0 /* HeraSetValueFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeraSetValueFormatter.h; sourceTree = "<group>"; };
+		6BA82039218ED1C6002DE1F0 /* HeraSetValueFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeraSetValueFormatter.m; sourceTree = "<group>"; };
+		6BA8203B218ED28C002DE1F0 /* HeraSymbolsValueFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeraSymbolsValueFormatter.h; sourceTree = "<group>"; };
+		6BA8203C218ED28C002DE1F0 /* HeraSymbolsValueFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeraSymbolsValueFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +119,9 @@
 		6B2A9E5D218C754B0060F959 /* HeraChartsManually */ = {
 			isa = PBXGroup;
 			children = (
+				6BA8202E218ECFEB002DE1F0 /* ViewModel */,
+				6BA8202B218ECB50002DE1F0 /* DataFormatter */,
+				6BA8202A218ECB45002DE1F0 /* View */,
 				6B2A9E5E218C754B0060F959 /* AppDelegate.h */,
 				6B2A9E5F218C754B0060F959 /* AppDelegate.m */,
 				6B2A9E61218C754B0060F959 /* ViewController.h */,
@@ -126,6 +144,37 @@
 				6B63D4A5218CC21C0044DDF7 /* ChartsTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6BA8202A218ECB45002DE1F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BA82027218EC94B002DE1F0 /* HeraChartView.h */,
+				6BA82028218EC94B002DE1F0 /* HeraChartView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BA8202B218ECB50002DE1F0 /* DataFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				6BA82032218ED157002DE1F0 /* HeraDataValueFormatter.h */,
+				6BA82033218ED157002DE1F0 /* HeraDataValueFormatter.m */,
+				6BA82038218ED1C6002DE1F0 /* HeraSetValueFormatter.h */,
+				6BA82039218ED1C6002DE1F0 /* HeraSetValueFormatter.m */,
+				6BA8203B218ED28C002DE1F0 /* HeraSymbolsValueFormatter.h */,
+				6BA8203C218ED28C002DE1F0 /* HeraSymbolsValueFormatter.m */,
+			);
+			path = DataFormatter;
+			sourceTree = "<group>";
+		};
+		6BA8202E218ECFEB002DE1F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BA8202F218ED05A002DE1F0 /* HeraPeriodModel.h */,
+				6BA82030218ED05A002DE1F0 /* HeraPeriodModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +275,13 @@
 			files = (
 				6B2A9E63218C754B0060F959 /* ViewController.m in Sources */,
 				6B2A9E6E218C754B0060F959 /* main.m in Sources */,
+				6BA82031218ED05A002DE1F0 /* HeraPeriodModel.m in Sources */,
 				6B2A9E60218C754B0060F959 /* AppDelegate.m in Sources */,
+				6BA8203D218ED28C002DE1F0 /* HeraSymbolsValueFormatter.m in Sources */,
 				6B2A9E82218C90A50060F959 /* HeraChartsBridge.swift in Sources */,
+				6BA82034218ED157002DE1F0 /* HeraDataValueFormatter.m in Sources */,
+				6BA82029218EC94B002DE1F0 /* HeraChartView.m in Sources */,
+				6BA8203A218ED1C6002DE1F0 /* HeraSetValueFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
