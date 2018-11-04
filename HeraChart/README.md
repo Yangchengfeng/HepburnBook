@@ -36,7 +36,7 @@
 
   - 缩放图表(根据个人对x轴可视数据个数设置)，使得图表可以拖动
 
-图如下：
+具体效果图如下：
 
 ![demo](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Charts_Example.png)
 
