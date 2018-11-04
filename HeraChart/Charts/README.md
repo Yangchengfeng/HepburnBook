@@ -159,11 +159,21 @@ end
 
 ## Example
 
+下面将以个人demo为例，效果图如下：
+
+![demo](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Charts_Example.png)
+
+主要包括了：图表页面 - HeraChartView，区块设置 - HeraPeriodModel、HeraLineChartLabelRenderer，需求数据源：HeraPeriodsDataModel，x-y轴数据格式转换 - HeraDataValueFormatter、HeraSetValueFormatter、HeraSymbolsValueFormatter等这几个类，具体[参见](https://blog.csdn.net/yang_chengfeng/article/details/83515863)
+
 ## Troubleshooting
 
-
-## Features
-
+1、左右滑动问题
+ 
+ - solve point：通过 LineChartView 中的 `setScaleMinima:scaleY:` 方法对图表进行缩放，默认是所有数据放在一屏
+ 
+ 2、区块说明文案添加问题
+ 
+ - solve point：通过对 LineChartRenderer 继承(OC调用swift)，添加drawLineLabel方法，调用` labelPositionSetWithCenterY ` 设置文案显示位置，再通过 ChartUtils.drawText 进行文字绘制
 
 ## Appendices
 
