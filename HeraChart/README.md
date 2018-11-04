@@ -22,6 +22,10 @@
 
 📚 [Apply](https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraChart/Charts)
 
+📓 [Example](https://github.com/Yangchengfeng/HepburnBook/tree/Charts_iOS_Manually_v2/HeraChart/Charts/HeraChartsManually)，效果图如下：
+
+![demo](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Charts_Example.png)
+
 这个库应该是图表库里边star✨特别多的了(安卓的同学推荐用这个库MPAndroidChart🔥🔥🔥)；相对而言有如下问题：
 
 ❗️iOS是swift语言开发的，如果是本身项目是OC开发的，需要桥接
@@ -32,4 +36,3 @@
 
  虽然有以上问题，但是挡不住这个功能丰富的库的光芒🌅，具体操作、遇到问题及解决方案([传送门](https://blog.csdn.net/yang_chengfeng/article/details/83515863))
 
---- 未完 // 待续 --- 
