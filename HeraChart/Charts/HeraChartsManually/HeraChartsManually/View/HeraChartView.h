@@ -11,6 +11,6 @@
 
 @interface HeraChartView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame topicStr:(NSString *)topic yAxisMin:(int)minY maxY:(int)maxY andPeriodsModel:(NSArray<HeraPeriodModel *>*)periodsModel;
+- (instancetype)initWithFrame:(CGRect)frame topicStr:(NSString *)topic yAxisMin:(int)minY maxY:(int)maxY andPeriodsModel:(NSArray<HeraPeriodModel *>*)periodsDataModel;
 
 @end

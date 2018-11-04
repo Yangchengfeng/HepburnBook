@@ -10,6 +10,7 @@
 #import "HeraDataValueFormatter.h"
 #import "HeraSymbolsValueFormatter.h"
 #import "HeraSetValueFormatter.h"
+#import "HeraChartsManually-Swift.h"
 // #import "HeraChartsManually-Bridging-Header.h" // 引入桥接文件
 
 @interface HeraChartView ()
@@ -34,24 +35,20 @@
  * @param periodsModel 所有时期数据模型
  *
  */
-- (instancetype)initWithFrame:(CGRect)frame topicStr:(NSString *)topic yAxisMin:(int)minY maxY:(int)maxY andPeriodsModel:(NSArray<HeraPeriodModel *>*)periodsModel {
+- (instancetype)initWithFrame:(CGRect)frame topicStr:(NSString *)topicStr yAxisMin:(int)minY maxY:(int)maxY andPeriodsModel:(NSArray<HeraPeriodModel *>*)periodsDataModel {
     self = [super initWithFrame:frame];
     if(self) {
         
         self.dataSets = [NSMutableArray array];
         self.legendEntries = [NSMutableArray array];
         
-        [self p_configureTopicLabel:topic];
-        [self p_configureChartViewWithYAxisMin:minY maxY:maxY andPeriodsModel:periodsModel];
+        [self p_configureTopicLabel:topicStr];
+        [self p_configureChartViewWithYAxisMin:minY maxY:maxY andPeriodsModel:periodsDataModel];
     }
     return self;
 }
 
 #pragma mark - UI
-
-- (void)p_configurePeriodsModel:(NSArray<HeraPeriodModel *>*)periodsModel {
-    
-}
 
 - (void)p_configureTopicLabel:(NSString *)topic {
     self.topicLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 20, self.frame.size.width, 15)];
@@ -78,7 +75,14 @@
         LineChartData *chartDatas = [[LineChartData alloc] initWithDataSets:[self.dataSets copy]];
         chartDatas.highlightEnabled = NO;
         chartView.data = chartDatas;
-        [chartView.legend setCustomWithEntries:self.legendEntries];
+        
+        ChartLegend *legend = chartView.legend;
+        legend.enabled = NO;
+        [legend setCustomWithEntries:self.legendEntries];
+        
+        HeraLineChartLabelRenderer *renderer = [[HeraLineChartLabelRenderer alloc] initWithDataProvider:chartView animator:chartView.chartAnimator viewPortHandler:chartView.viewPortHandler legend:legend];
+        [renderer labelPositionSetWithCenterY:36]; // ❗️根据你设置y范围选择
+        chartView.renderer = renderer;
     }
     
     [self addSubview:chartView];
@@ -120,15 +124,12 @@
     chartView.userInteractionEnabled = YES;
     chartView.scaleXEnabled = YES;
     chartView.scaleYEnabled = NO;
-    [chartView setScaleMinima:chartCycle/6.8 scaleY:1]; // 缩放(一屏7天)
-    
-    ChartLegend *legend = chartView.legend;
-    legend.enabled = NO;
+    [chartView setScaleMinima:chartCycle/7 scaleY:1]; // 缩放(一屏横坐标个数)
     
     // y轴设置
     ChartYAxis *yAxis = chartView.leftAxis;
-    [yAxis setAxisMinimum:minY];
-    [yAxis setAxisMaximum:maxY];
+    [yAxis setAxisMinimum:minY-1];
+    [yAxis setAxisMaximum:maxY+1];
     yAxis.valueFormatter = [[HeraSymbolsValueFormatter alloc] init];
     yAxis.forceLabelsEnabled = NO;
     yAxis.labelPosition = YAxisLabelPositionOutsideChart;
