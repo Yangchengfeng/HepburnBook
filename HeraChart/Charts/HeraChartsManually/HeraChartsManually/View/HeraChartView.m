@@ -11,13 +11,10 @@
 #import "HeraSymbolsValueFormatter.h"
 #import "HeraSetValueFormatter.h"
 #import "HeraChartsManually-Swift.h"
-// #import "HeraChartsManually-Bridging-Header.h" // 引入桥接文件
 
 @interface HeraChartView ()
 
 @property (nonatomic, strong) UILabel *topicLabel;
-@property (nonatomic, strong) NSString *topicStr;
-
 @property (nonatomic, copy) NSArray<HeraPeriodModel *> *periodsModel;
 @property (nonatomic, strong) NSMutableArray<ChartLegendEntry*> *legendEntries;
 @property (nonatomic, strong) NSMutableArray *dataSets;
