@@ -22,7 +22,7 @@
 
 📚 [Apply](https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraChart/Charts)
 
-📓 [Example](https://github.com/Yangchengfeng/HepburnBook/tree/Charts_iOS_Manually_v2/HeraChart/Charts/HeraChartsManually)
+📓 [Example](https://github.com/Yangchengfeng/HepburnBook/blob/Charts_iOS_Manually_v2/HeraChart/Charts/README.md)
 
 主要实现点有如下：
 
