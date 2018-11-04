@@ -21,9 +21,8 @@
 
 #### chapter 01：[AAChartKit_Apply](https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraChart/HeraChart)
 
+#### chapter 02：[Charts](https://github.com/Yangchengfeng/HepburnBook/blob/master/HeraChart/README.md)
+
 ## 🐹 Part Three On the Road to Mastering Golang
 
 #### note 01：[Build Web Application with Golang](https://github.com/Yangchengfeng/HepburnBook/blob/master/AfterReading%EF%BC%9ABuildWebApplicationWithGolang.md)
-
-
-
