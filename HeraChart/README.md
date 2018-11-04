@@ -22,6 +22,24 @@
 
 📚 [Apply](https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraChart/Charts)
 
+📓 [Example](https://github.com/Yangchengfeng/HepburnBook/tree/Charts_iOS_Manually_v2/HeraChart/Charts/HeraChartsManually)
+
+主要实现点有如下：
+
+- 图表设置：x、y轴数据
+
+- 曲线数据样式及填充
+
+  - 分不同区块，如：少年期、中年期、老年期；
+
+  - 不同区块包含了各自的：曲线上的数据(x-y轴)、填充颜色(支持单一或渐变)、区块描述(文案：颜色、位置、字号等)
+
+  - 缩放图表(根据个人对x轴可视数据个数设置)，使得图表可以拖动
+
+具体效果图如下：
+
+![demo](https://github.com/Yangchengfeng/HepburnBook/blob/master/Pic/Charts_Example.png)
+
 这个库应该是图表库里边star✨特别多的了(安卓的同学推荐用这个库MPAndroidChart🔥🔥🔥)；相对而言有如下问题：
 
 ❗️iOS是swift语言开发的，如果是本身项目是OC开发的，需要桥接
@@ -31,5 +49,3 @@
 ❗️对于具体业务，网上资料比较多是安卓的，需要理解源码
 
  虽然有以上问题，但是挡不住这个功能丰富的库的光芒🌅，具体操作、遇到问题及解决方案([传送门](https://blog.csdn.net/yang_chengfeng/article/details/83515863))
-
---- 未完 // 待续 --- 
