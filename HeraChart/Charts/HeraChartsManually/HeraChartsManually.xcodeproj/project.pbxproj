@@ -14,8 +14,8 @@
 		6B2A9E6B218C754B0060F959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2A9E69218C754B0060F959 /* LaunchScreen.storyboard */; };
 		6B2A9E6E218C754B0060F959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A9E6D218C754B0060F959 /* main.m */; };
 		6B2A9E82218C90A50060F959 /* HeraChartsBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A9E81218C90A50060F959 /* HeraChartsBridge.swift */; };
-		6BC372A0218CC4D600CFB68C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B63D4A3218CC21C0044DDF7 /* Charts.framework */; };
-		6BC372A1218CC4D600CFB68C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B63D4A3218CC21C0044DDF7 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BA82021218EC61E002DE1F0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B63D4A3218CC21C0044DDF7 /* Charts.framework */; };
+		6BA82022218EC61E002DE1F0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B63D4A3218CC21C0044DDF7 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,7 @@
 			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
 			remoteInfo = ChartsTests;
 		};
-		6BC372A2218CC4D600CFB68C /* PBXContainerItemProxy */ = {
+		6BA82023218EC61E002DE1F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6B63D49D218CC21C0044DDF7 /* Charts.xcodeproj */;
 			proxyType = 1;
@@ -43,13 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6BC372A4218CC4D700CFB68C /* Embed Frameworks */ = {
+		6BA82025218EC61E002DE1F0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6BC372A1218CC4D600CFB68C /* Charts.framework in Embed Frameworks */,
+				6BA82022218EC61E002DE1F0 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BC372A0218CC4D600CFB68C /* Charts.framework in Frameworks */,
+				6BA82021218EC61E002DE1F0 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +138,12 @@
 				6B2A9E57218C754B0060F959 /* Sources */,
 				6B2A9E58218C754B0060F959 /* Frameworks */,
 				6B2A9E59218C754B0060F959 /* Resources */,
-				6BC372A4218CC4D700CFB68C /* Embed Frameworks */,
+				6BA82025218EC61E002DE1F0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6BC372A3218CC4D600CFB68C /* PBXTargetDependency */,
+				6BA82024218EC61E002DE1F0 /* PBXTargetDependency */,
 			);
 			name = HeraChartsManually;
 			productName = HeraChartsManually;
@@ -234,10 +234,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6BC372A3218CC4D600CFB68C /* PBXTargetDependency */ = {
+		6BA82024218EC61E002DE1F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
-			targetProxy = 6BC372A2218CC4D600CFB68C /* PBXContainerItemProxy */;
+			targetProxy = 6BA82023218EC61E002DE1F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
