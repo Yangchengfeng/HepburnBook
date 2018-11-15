@@ -25,9 +25,11 @@
 
 ### Section Two Chart
 
-#### chapter 01：[AAChartKit_Apply](https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraChart/HeraChart)
+#### chapter 01：[AAChartKit](https://github.com/Yangchengfeng/HepburnBook/tree/master/HeraChart/HeraChart)
 
 #### chapter 02：[Charts](https://github.com/Yangchengfeng/HepburnBook/blob/master/HeraChart/README.md)
+
+#### chapter 03：[ECharts](https://github.com/Yangchengfeng/HepburnBook/blob/master/HeraChart/README.md)
 
 ## 🐹 Part Three On the Road to Mastering Golang
 
