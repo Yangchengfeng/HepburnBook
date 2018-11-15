@@ -1,4 +1,4 @@
-# Charts
+# HeraChart
 
 📈 📊 最近接触到图表的页面，也在了解GitHub上比较popular的图表框架，下面从每个的使用来看看：
 
@@ -49,3 +49,7 @@
 ❗️对于具体业务，网上资料比较多是安卓的，需要理解源码
 
  虽然有以上问题，但是挡不住这个功能丰富的库的光芒🌅，具体操作、遇到问题及解决方案([传送门](https://blog.csdn.net/yang_chengfeng/article/details/83515863))
+
+## ECharts
+
+下面分享一篇个人看到的关于ECharts的分析[文章](https://www.sciencedirect.com/science/article/pii/S2468502X18300068)
