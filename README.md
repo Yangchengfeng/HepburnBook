@@ -2,16 +2,16 @@
 
 ## 🍎 Part One About iOS
 
-### Section One Optimization
+### Section One Know why?
 
-#### chapter 01：About cell
+#### chapter 01：About Cell
 
 ### Section Two WWDC
 
 #### chapter 01：[What's New in LLVM](https://github.com/Yangchengfeng/HepburnBook/blob/master/LLVM.md)
 #### chapter 02：[App Startup Time:Past, Present, and Future](https://github.com/Yangchengfeng/HepburnBook/blob/master/AppStartupTimePastPresentAndFuture.md)
 
-###  Section Three Why？
+###  Section Three Master
 
 #### chapter 01：[Mach-O](https://github.com/Yangchengfeng/HepburnBook/blob/master/MachO.md)
 
