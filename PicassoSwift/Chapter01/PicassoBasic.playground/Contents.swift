@@ -34,6 +34,7 @@ var oneThirdInFloat: Float = 1/3
 var oneThirdInDouble: Double = 1/3
 
 var PI_ = 314e-2
+var sixteenSquare = 0x1ap2 // 26 * 2 * 2
 
 var three = 3
 type(of: three)
