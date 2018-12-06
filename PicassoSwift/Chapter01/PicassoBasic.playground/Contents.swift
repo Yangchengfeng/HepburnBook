@@ -712,6 +712,93 @@ let point3 = Point3D(x: 1, y: 1)
 let point4 = Point3D(xy: 2)
 let point5 = Point3D(at: ("3", "3"))
 
+let numbers = [1, 2, 3, 4, 5, 6]
+var iterator = numbers.makeIterator()
+while let element = iterator.next() { // ①
+    print(element)
+}
+for element in numbers { // ②
+    print(element)
+}
+
+// ---------- *** 21.它叫Optional, 却必不可少: *** ----------
+
+func arrayProcess(array: [Int]) -> String? {
+    let firstNum: Int
+    if let first = array.first {
+        firstNum = first
+    } else {
+        return nil
+    }
+    return String(firstNum)
+}
+
+// uninhabited type - fatal error / dispatchMain
+func toDo(item: String?) -> Never {
+    guard let item = item else {
+        fatalError("Nothing to do")
+    }
+    fatalError("\(item)")
+}
+
+var swift: String? = "Swift"
+let SWIFT: String?
+
+if let swift = swift {
+    SWIFT = swift.uppercased()
+} else {
+    SWIFT = nil
+    fatalError("Cannot uppercase a nil")
+}
+
+let SWIFT1 = swift?.uppercased().lowercased()
+print(SWIFT1)
+
+extension String {
+    func toUppercase() -> String? {
+        guard !self.isEmpty else {
+            return nil
+        }
+        
+        return self.uppercased()
+    }
+}
+let SWIFT2 = swift?.toUppercase()?.lowercased()
+print(SWIFT2)
+
+let dictArr = ["fibo": [0, 1, 2, 3, 4, 5]]
+dictArr["fibo"]?[1] // Optional Chaining
+
+var uInput: String? = nil
+let uername = uInput ?? "MARS" // Nil coalescing
+
+let o: Int?? = .some(nil)
+let on: Int?? = nil
+let t: Int? = 2
+let th: Int? = 3
+
+o ?? t ?? th    // nil
+(o ?? t) ?? th  // 3
+
+on ?? t ?? th    // 2
+(on ?? t) ?? th  // 2
+
+// implicit optional：Objective-C中对象指针，初始值为nil但后面会通过特殊处理
+
+let image: UIImage! = UIImage.init(named: "someName")
+
+var eleven: Int! = 11
+if eleven == 11 {
+    print(type(of: eleven)) // "Optional<Int>
+}
+
+
+
+
+
+
+
+
 
 
 
