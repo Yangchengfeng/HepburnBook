@@ -1,9 +1,9 @@
-# Contents
+## Contents
 
-- [🍎 Part One About iOS](#🍎 Part One About iOS)
-- [📏Part Two Interesting UI](#📏Part Two Interesting UI)
-- [📷 Part Three AVFoundation](#📷 Part Three AVFoundation)
-- [🐹 Part Four On the Road to Mastering Golang](#🐹 Part Four On the Road to Mastering Golang)
+- [🍎 Part One About iOS](#iOS)
+- [📏Part Two Interesting UI](#UI)
+- [📷 Part Three AVFoundation](#AV)
+- [🐹 Part Four On the Road to Mastering Golang](#Go)
 
 
 
