@@ -33,7 +33,7 @@
 
 ## Flutter
 
-## Section One Freshman
+### Section One Freshman
 
 ## UI
 
