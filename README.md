@@ -24,6 +24,7 @@
 ###  Section Four Master
 
 #### chapter 01：[Mach-O](https://github.com/Yangchengfeng/HepburnBook/blob/master/MachO.md)
+#### chapter 02:  [Crash report](https://github.com/Yangchengfeng/HepburnBook/blob/master/iOS_Dev/CrashReport.md)
 
 ###  Section Five Bulid iOS with another handle -- Swift
 
